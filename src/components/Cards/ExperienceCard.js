@@ -19,6 +19,7 @@ const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
+    white-space: pre-wrap;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
@@ -46,8 +47,9 @@ const Card = styled.div`
     gap: 12px;
     transition: all 0.3s ease-in-out;
     &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        box-shadow: rgba(23, 92, 230, 0.2) 0px 10px 30px;
         transform: translateY(-5px);
+        border: 0.1px solid ${({ theme }) => theme.primary};
     }
     @media only screen and (max-width: 768px){
         padding: 10px;
@@ -65,8 +67,8 @@ const Card = styled.div`
 
     }
 
-    border: 0.1px solid #306EE8;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border: 0.1px solid ${({ theme }) => theme.primary + '33'};
+    box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
 `
 
 const Top = styled.div`
@@ -118,7 +120,6 @@ const Date = styled.div`
         font-size: 10px;
     }
 `
-
 
 const Skills = styled.div`
     width: 100%;

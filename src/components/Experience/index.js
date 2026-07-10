@@ -10,6 +10,8 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
 
+import { useTheme } from 'styled-components';
+
 const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -74,7 +76,8 @@ const TimelineSection = styled.div`
 
 
 
-const index = () => {
+const Experience = () => {
+    const theme = useTheme();
     return (
         <Container id="experience">
             <Wrapper>
@@ -88,7 +91,7 @@ const index = () => {
                             <TimelineItem>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: theme.primary }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <ExperienceCard experience={experience}/>
@@ -103,4 +106,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Experience

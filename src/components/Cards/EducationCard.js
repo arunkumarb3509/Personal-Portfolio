@@ -64,7 +64,7 @@ const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid #854CE6;
+    border: 0.1px solid ${({ theme }) => theme.primary};
 `
 
 const Top = styled.div`
@@ -125,8 +125,6 @@ const Grade = styled.div`
         font-size: 12px;
     }
 `
-
-
 
 const EducationCard = ({ education }) => {
     return (

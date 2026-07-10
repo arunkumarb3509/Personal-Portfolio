@@ -192,7 +192,14 @@ const index = ({ openModal, setOpenModal }) => {
                             
                         </>
                     )}
-                    
+                    <ButtonGroup>
+                        {project?.github && (
+                            <Button dull href={project?.github} target="_blank">View Code</Button>
+                        )}
+                        {project?.webapp && (
+                            <Button href={project?.webapp} target="_blank">🔗 Live Demo</Button>
+                        )}
+                    </ButtonGroup>
                 </Wrapper>
             </Container>
 

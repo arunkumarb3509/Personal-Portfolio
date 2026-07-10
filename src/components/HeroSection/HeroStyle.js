@@ -100,6 +100,8 @@ export const Img = styled.img`
   max-height: 400px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
+  box-shadow: 0px 0px 30px rgba(37, 99, 235, 0.4);
+  object-fit: cover;
 
   @media (max-width: 768px) {
     max-width: 400px;
