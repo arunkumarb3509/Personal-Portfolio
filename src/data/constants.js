@@ -8,7 +8,8 @@ export const Bio = {
   github: "https://github.com",
   resume:
     // "https://drive.google.com/file/d/1vCH-ERz4OthMXIXQJ0cSrwcgY865ZHsa/view?usp=drive_link",
-     "https://drive.google.com/file/d/1HkZf5N_GxM5pIjhzZhEHZ5sjTz18DR4P/view?usp=drive_link",
+    // "https://drive.google.com/file/d/1HkZf5N_GxM5pIjhzZhEHZ5sjTz18DR4P/view?usp=drive_link",
+       "https://drive.google.com/file/d/1yFlYK_5DORSCJhGamSw2a1gI4Rf4-C0X/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/arun95/",
 };
 
@@ -198,7 +199,8 @@ export const experiences = [
     ],
     category: "Web Application",
     github: "https://github.com",
-    webapp: "https://shiny-fox-650360.netlify.app/"
+    webapp: "https://food-application-lime.vercel.app/"
+    // https://shiny-fox-650360.netlify.app/
   },
   {
     id: 2,
@@ -213,6 +215,6 @@ export const experiences = [
     ],
     category: "Portfolio Website",
     github: "https://github.com",
-    webapp: "https://github.com"
+    webapp: "https://magenta-crumble-c1c1bb.netlify.app/"
   }
 ];
